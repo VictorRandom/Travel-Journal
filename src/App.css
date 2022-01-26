@@ -1,11 +1,10 @@
 
 .App{
     width: 550px;
-    /* position: absolute;
-    top: 50%;
+    position: absolute;
     left: 50%;
-
-    transform: translate(-50%, -50%); */
+    transform: translateX(-50%);
+    background-color: #F5F5DC;
 }
 
 .navbar{
@@ -31,7 +30,10 @@
     /* justify-content: center;
     align-items: center; */
 
-    margin: 15px;
+    
+    padding: 20px;
+
+    border-bottom:  1px solid #F5F5F5;
 }
 
 #card-picture{

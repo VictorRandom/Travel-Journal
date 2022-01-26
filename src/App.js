@@ -11,27 +11,30 @@ function App() {
   const cardInfo = data.map((card) => {
     return (
     <Card 
-      id = {card.id}
-      img = {card.img}
-      location = {card.location}
-      maps = {card.maps}
-      place = {card.place}
-      dayInitalDate = {card.initialDate.day}
-      monthInitalDate = {card.initialDate.month}
-      yearInitalDate = {card.initialDate.year}
-      dayEndDate = {card.endDate.day}
-      monthEndDate = {card.endDate.month}
-      yearEndDate = {card.endDate.year}
-      description = {card.description}
+      key={card.id}
+      card={card}
+      // img = {card.img}
+      // location = {card.location}
+      // maps = {card.maps}
+      // place = {card.place}
+      // dayInitialDate = {card.initialDate.day}
+      // monthInitialDate = {card.initialDate.month}
+      // yearInitialDate = {card.initialDate.year}
+      // dayEndDate = {card.endDate.day}
+      // monthEndDate = {card.endDate.month}
+      // yearEndDate = {card.endDate.year}
+      // description = {card.description}
     />
     )
   });
 
   return (
-    <div className="App">
-      <Navbar />
-      <div className="cards">
-        {cardInfo}
+    <div className="container">
+      <div className="App">
+        <Navbar />
+        <div className="cards">
+          {cardInfo}
+        </div>
       </div>
     </div>
   );
